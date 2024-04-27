@@ -15,6 +15,8 @@
 		BB09EE362BDD807A004C70FB /* UITextViewHintingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB09EE352BDD807A004C70FB /* UITextViewHintingTests.swift */; };
 		BB09EE402BDD807A004C70FB /* UITextViewHintingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB09EE3F2BDD807A004C70FB /* UITextViewHintingUITests.swift */; };
 		BB09EE422BDD807A004C70FB /* UITextViewHintingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB09EE412BDD807A004C70FB /* UITextViewHintingUITestsLaunchTests.swift */; };
+		BB09EE4F2BDD80C8004C70FB /* ProxyTextStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB09EE4E2BDD80C8004C70FB /* ProxyTextStorage.swift */; };
+		BB09EE512BDD80E0004C70FB /* DocumentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB09EE502BDD80E0004C70FB /* DocumentTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		BB09EE3B2BDD807A004C70FB /* UITextViewHintingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITextViewHintingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB09EE3F2BDD807A004C70FB /* UITextViewHintingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewHintingUITests.swift; sourceTree = "<group>"; };
 		BB09EE412BDD807A004C70FB /* UITextViewHintingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewHintingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB09EE4E2BDD80C8004C70FB /* ProxyTextStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyTextStorage.swift; sourceTree = "<group>"; };
+		BB09EE502BDD80E0004C70FB /* DocumentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTextView.swift; sourceTree = "<group>"; };
+		BB09EE522BDDAE9B004C70FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,7 @@
 		BB09EE152BDD8079004C70FB = {
 			isa = PBXGroup;
 			children = (
+				BB09EE522BDDAE9B004C70FB /* README.md */,
 				BB09EE202BDD8079004C70FB /* UITextViewHinting */,
 				BB09EE342BDD807A004C70FB /* UITextViewHintingTests */,
 				BB09EE3E2BDD807A004C70FB /* UITextViewHintingUITests */,
@@ -103,6 +109,8 @@
 				BB09EE272BDD807A004C70FB /* Assets.xcassets */,
 				BB09EE292BDD807A004C70FB /* UITextViewHinting.entitlements */,
 				BB09EE2A2BDD807A004C70FB /* Preview Content */,
+				BB09EE4E2BDD80C8004C70FB /* ProxyTextStorage.swift */,
+				BB09EE502BDD80E0004C70FB /* DocumentTextView.swift */,
 			);
 			path = UITextViewHinting;
 			sourceTree = "<group>";
@@ -263,6 +271,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB09EE242BDD8079004C70FB /* ContentView.swift in Sources */,
+				BB09EE4F2BDD80C8004C70FB /* ProxyTextStorage.swift in Sources */,
+				BB09EE512BDD80E0004C70FB /* DocumentTextView.swift in Sources */,
 				BB09EE262BDD8079004C70FB /* Item.swift in Sources */,
 				BB09EE222BDD8079004C70FB /* UITextViewHintingApp.swift in Sources */,
 			);
@@ -446,7 +456,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cr3.UITextViewHinting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,7 +495,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.cr3.UITextViewHinting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
