@@ -63,7 +63,7 @@ class ProxyTextStorage: NSTextStorage {
 
 extension ProxyTextStorage: NSTextContentManagerDelegate {
     /// This will hide NSTextElement with attribute "hidden"
-    /// note you have to patch replaceCharacters - as this example will crash on edit
+    /// note this example will crash on edit - don't know why
     func textContentManager(_ textContentManager: NSTextContentManager,
                             shouldEnumerate textElement: NSTextElement,
                             options: NSTextContentManager.EnumerationOptions) -> Bool {
